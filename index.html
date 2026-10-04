@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>myy boyyye💗</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================================================= -->
+<!-- 🌷 OPENING -->
+<!-- ================================================= -->
+
+<section class="screen opening" id="opening">
+
+    <div class="opening-paper">
+
+        <img
+            src="images/stages/stage1-cat.png.jpg"
+            class="opening-cat"
+            alt="cute cat">
+
+        <h1>Happy Boyfeeeee Day</h1>
+
+        <h2>Babyyyy 💗</h2>
+
+        <p>I made a little something for you...</p>
+
+        <p>mwahh minii potrooo 🌷</p>
+
+        <button onclick="startWebsite()">
+            ENTER 💗
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- ✨ LOADING -->
+<!-- ================================================= -->
+
+<section class="screen hidden" id="loading">
+
+    <div class="loading-box">
+
+        <div class="loading-heart">💗</div>
+
+        <h1>Preparing your surprise...</h1>
+
+        <div class="loading-stars">
+            ✨ ⭐ ✨ ⭐ ✨
+        </div>
+
+        <div class="loading-bar">
+
+            <div class="loading-progress"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- 🌿 MENU -->
+<!-- ================================================= -->
+
+<section class="screen hidden stages-page" id="menu">
+
+    <div class="stages-content">
+
+        <h1>Our Little Journey 💗</h1>
+
+        <p>Three little surprises waiting for you...</p>
+
+
+        <div class="stage-container">
+
+
+            <!-- STAGE 1 -->
+
+            <div class="stage-card" id="stageGame">
+
+                <div class="stage-number">
+                    01
+                </div>
+
+                <h2>Questions 🎀</h2>
+
+                <p>
+                    Let's see how well you know me huhhhh 👀
+                </p>
+
+                <button onclick="openGame()">
+                    OPEN 💗
+                </button>
+
+            </div>
+
+
+
+            <!-- STAGE 2 -->
+
+            <div class="stage-card locked" id="stagePhotos">
+
+                <div class="stage-number">
+                    02
+                </div>
+
+                <h2>Our Memories 📸</h2>
+
+                <p>
+                    A little collection of us.
+                </p>
+
+                <button onclick="openPhotos()">
+                    OPEN 💗
+                </button>
+
+            </div>
+
+
+
+            <!-- STAGE 3 -->
+
+            <div class="stage-card locked" id="stageLove">
+
+                <div class="stage-number">
+                    03
+                </div>
+
+                <h2>A Little Surprise 🎁</h2>
+
+                <p>
+                    Something very cute is waiting...
+                </p>
+
+                <button onclick="openLove()">
+                    OPEN 💗
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- 🎀 STAGE 1 — QUESTIONS -->
+<!-- ================================================= -->
+
+<section class="screen hidden stage-one" id="game">
+
+    <div class="stage-box">
+
+        <h1>Questions 🎀</h1>
+
+        <p>
+            Answer carefully babyyy... 👀💗
+        </p>
+
+
+        <div class="question-box">
+
+            <h2 id="question"></h2>
+
+            <div class="answers" id="answers"></div>
+
+            <p id="gameResult"></p>
+
+        </div>
+
+
+
+        <div id="gameCat"
+             class="game-cat hidden">
+
+            <img
+                src="images/stages/stage1-cat.png.jpg"
+                alt="cute cat">
+
+            <div class="cat-speech">
+                okk good 😌💗
+            </div>
+
+        </div>
+
+
+
+        <button
+            class="next-button hidden"
+            id="gameNext"
+            onclick="finishGame()">
+
+            NEXT → 💗
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- 📸 STAGE 2 — PHOTOS -->
+<!-- ================================================= -->
+
+<section class="screen hidden stage-two" id="photos">
+
+    <div class="photos-content">
+
+        <h1>Our Little Memories 📸</h1>
+
+        <p>Some little pieces of us 💗</p>
+
+
+
+        <div class="photo-grid">
+
+
+            <div class="photo-card">
+
+                <img
+                    src="images/photos/photo1.jpg"
+                    alt="Our memory">
+
+                <p>
+                    Our moment 🥹
+                </p>
+
+            </div>
+
+
+
+            <div class="photo-card">
+
+                <img
+                    src="images/photos/photo2.jpg"
+                    alt="Our memory">
+
+                <p>
+                    My favorite 💗
+                </p>
+
+            </div>
+
+
+
+            <div class="photo-card">
+
+                <img
+                    src="images/photos/photo3.jpg"
+                    alt="hehe">
+
+                <p>
+                    Hehe us
+                </p>
+
+            </div>
+
+
+
+            <div class="photo-card">
+
+                <img
+                    src="images/photos/photo4.jpg"
+                    alt="Our memory">
+
+                <p>
+                    Mwahhh 🫶
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <button onclick="finishPhotos()">
+            NEXT 💗
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- 🎁 STAGE 3 — GIFT BOX + BOUQUET -->
+<!-- ================================================= -->
+
+<section class="screen hidden stage-three" id="love">
+
+    <div class="love-content">
+
+        <h1>
+            flowerr 🌸
+        </h1>
+
+        <p class="cat-intro">
+            Look at this little surprise... 🥹💗
+        </p>
+
+
+        <!-- ========================================= -->
+        <!-- 🎁 GIFT SCENE -->
+        <!-- ========================================= -->
+
+        <div class="gift-scene" id="giftScene">
+
+
+            <!-- ✨ SPARKLES -->
+
+            <span class="gift-sparkle sparkle-one">✦</span>
+            <span class="gift-sparkle sparkle-two">✧</span>
+            <span class="gift-sparkle sparkle-three">✦</span>
+            <span class="gift-sparkle sparkle-four">✨</span>
+
+
+            <!-- 💗 FLOATING HEARTS -->
+
+            <span class="gift-heart heart-one">💗</span>
+            <span class="gift-heart heart-two">💕</span>
+            <span class="gift-heart heart-three">💖</span>
+
+
+            <!-- 🌷 REALISTIC BOUQUET -->
+
+            <div class="bouquet-wrap">
+
+                <img
+                    src="images/stages/bouquet.png.jpg"
+                    class="bouquet-image"
+                    alt="beautiful flower bouquet">
+
+            </div>
+
+
+            <!-- 🎁 BOX -->
+
+            <div class="gift-box">
+
+                <div class="gift-body">
+
+                    <div class="gift-ribbon-vertical"></div>
+
+                    <div class="gift-ribbon-horizontal"></div>
+
+                </div>
+
+
+                <div class="gift-lid">
+
+                    <div class="gift-lid-ribbon"></div>
+
+                    <div class="gift-bow-left"></div>
+
+                    <div class="gift-bow-right"></div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- ========================================= -->
+        <!-- 💗 MESSAGE -->
+        <!-- ========================================= -->
+
+        <p id="loveMessage">
+
+            Click the gift... 🎁💗
+
+        </p>
+
+
+
+        <!-- ========================================= -->
+        <!-- 💗 BUTTON -->
+        <!-- ========================================= -->
+
+        <button
+            id="loveNext"
+            onclick="nextLoveAnimation()">
+
+            OPEN THE GIFT 🎁
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- 💌 LETTER MENU -->
+<!-- ================================================= -->
+
+<section
+    class="screen hidden letters-menu"
+    id="lettersMenu">
+
+    <div>
+
+        <h1>
+            A Few Things I Want To Tell You 💌
+        </h1>
+
+        <p>
+            aa mini letter forr youhh gandu
+        </p>
+
+        <div class="letter-buttons">
+
+            <button onclick="openLetter1()">
+                Letter 1 💗
+            </button>
+
+            <button onclick="openLetter2()">
+                Letter 2 💌
+            </button>
+
+            <button onclick="openLetter3()">
+                Letter 3 🥹
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- 💌 LETTER 1 -->
+<!-- ================================================= -->
+
+<section
+    class="letter-screen hidden"
+    id="letter1">
+
+    <div class="letter-paper letter-one">
+
+        <img
+            src="images/letters/star.png.jpg"
+            class="letter-star"
+            alt="star">
+
+        <div class="letter-text">
+
+            <h1>💗</h1>
+
+            <p>
+                susugutiiii mwah,
+            </p>
+
+            <p>
+                HAPPY BOIIFEEE'S DAYYY 🥹❤️
+            </p>
+
+            <p>
+                thhh this iss a mini letterrr for youu jhatuu
+                mwahh i hopee tuk bhhll lgibooo
+                sunumuunuuu mwahhh
+            </p>
+
+            <p>
+                I hope it makes you smile babyyy
+                because you deserve all the
+                happiness in the world ehehee,you
+                da best thapp,,love you th mostt🫶🏻
+            </p>
+
+            <p class="signature">
+                Mwahhh
+            </p>
+
+        </div>
+
+    </div>
+
+    <button onclick="openLetter2()">
+        NEXT LETTER → 💗
+    </button>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- 💗 LETTER 2 -->
+<!-- ================================================= -->
+
+<section
+    class="letter-screen hidden"
+    id="letter2">
+
+    <div class="letter-paper letter-two">
+
+        <img
+            src="images/letters/bow.png.jpg"
+            class="letter-bow"
+            alt="bow">
+
+        <img
+            src="images/letters/letter2-cat.png.jpg"
+            class="letter-two-cat"
+            alt="cute cat">
+
+        <div class="letter-text">
+
+            <h1>💌</h1>
+
+            <p>
+                mwah susuguti⭐️
+            </p>
+
+            <p>
+                mwah lwriiii⭐️,jno ne toi tuk lgibo hosake bhl nepao al bl
+                ex bhl pao besi bhl paisilu kintu enkua nhoi tar lgt ji asile bleg asil aru
+                heitu past asil muk eku motlob ni heibur lgt,bss tur lgt ase
+                mwahh tur lgt hske thkibo bisaru krne asu bujili
+                jiti nbhbabi dei olop t e mwah
+                tur lgt thkim bujim eri nidu sinta nkribi mwah 🌞
+                bsss bare bare eneeki khong nkribi aru jabo nlbi deiii pulpuluuu
+            </p>
+
+            <p>
+                mwah hosake future lge karne asu enei nai de nbhbi eneka
+                bhl kunuba pale jm ge nejao tur lgt e thkim amr relation e better krim
+                mwahh
+            </p>
+
+            <p class="signature">
+                I love you ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+    <button onclick="openLetter3()">
+        NEXT LETTER → 💗
+    </button>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- 🥹 LETTER 3 -->
+<!-- ================================================= -->
+
+<section
+    class="letter-screen hidden"
+    id="letter3">
+
+    <div class="letter-paper letter-three">
+
+        <img
+            src="images/letters/letter3-cat.png.jpg"
+            class="letter-three-cat"
+            alt="cute cat">
+
+        <img
+            src="images/letters/flower.png.jpg"
+            class="letter-flower"
+            alt="flower">
+
+        <div class="letter-text">
+
+            <h1>⭐️</h1>
+
+            <p>
+                Bhabbbyyyh
+            </p>
+
+            <p>
+                aruuu lasttlyy sorrryy babyyy
+                tuk hurt koru nubuju ketiyaba
+                mwah kintu bhl pao deii
+            </p>
+
+            <p>
+                soorry jimn baru hurt krilu
+                aru jimn baru toi expect kora bstu kribo nuarilu
+                but toi bujibo try kribi dei beya npabi muk
+                mwah.moi try krim bhl hbo jate ako tuk olop
+                t beya feel nhok,
+                aru mnt thkibi blgor karne eri nidu
+                tuk jhaturiii
+            </p>
+
+            <p>
+                I love you more than this tiny
+                website could ever explain mwahhh
+            </p>
+
+            <p class="signature">
+                thaapp
+            </p>
+
+        </div>
+
+    </div>
+
+    <button onclick="startCelebration()">
+        ONE LAST THING... ✨
+    </button>
+
+</section>
+
+
+
+<!-- ================================================= -->
+<!-- 💋 FINAL -->
+<!-- ================================================= -->
+
+<section
+    class="screen hidden celebration"
+    id="celebration">
+
+    <div id="celebrationStars"></div>
+
+    <div class="final-paper">
+
+        <img
+            src="images/ending/kiss.png.jpg"
+            class="kiss-sticker"
+            alt="kiss sticker">
+
+        <h1>
+            Mwahhh
+        </h1>
+
+        <div class="final-love">
+            I LOVE YOUUU THEE MOSTTT🍀
+        </div>
+
+        <h2>
+            Happy Boyfriend's Day, kanduraaa
+        </h2>
+
+        <p>
+            mur morom r bacha toi kandura
+            mwahhh
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
